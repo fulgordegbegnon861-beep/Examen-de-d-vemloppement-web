@@ -1,0 +1,103 @@
+/* ==========================================
+   STYLE DE L'EXERCICE 1 : PAGE DE PROFIL
+   ========================================== */
+
+/* Contrainte CSS : Fond gris clair pour la page */
+.profile-body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Boîte blanche pour détacher le profil du fond gris */
+.profile-card {
+    background-color: #ffffff;
+    max-width: 450px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Contrainte CSS : Titre centré */
+.profile-title {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    color: #333;
+    border-bottom: 2px dashed #ccc;
+    padding-bottom: 10px;
+}
+
+/* Centrage de la photo */
+.profile-photo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Contrainte CSS : Photo ronde */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Rend l'image parfaitement ronde */
+    object-fit: cover;
+    border: 3px solid #0056b3;
+}
+
+/* Alignement et espacement des blocs d'informations */
+.profile-info, .profile-bio, .profile-skills {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.profile-info p {
+    margin: 8px 0;
+}
+
+.profile-bio h3, .profile-skills h3 {
+    font-size: 18px;
+    color: #0056b3;
+    margin-bottom: 5px;
+}
+
+.profile-skills ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.profile-skills li {
+    margin: 4px 0;
+}
+
+/* Centrage du bouton */
+.profile-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+/* Contrainte CSS : Bouton bleu avec texte blanc */
+.btn-contact {
+    background-color: #0056b3; /* Bleu */
+    color: #ffffff;            /* Texte blanc */
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Le bouton prend toute la largeur pour ressembler à l'exemple */
+    max-width: 200px;
+}
+
+/* Effet de survol sur le bouton */
+.btn-contact:hover {
+    background-color: #004085;
+}

@@ -1,0 +1,81 @@
+/* ==========================================
+   STYLE DE L'EXERCICE 2 : CARTE DE SERVICE
+   ========================================== */
+
+/* Centrage de la carte sur la page */
+.service-body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contraintes CSS de la carte : Largeur 350px, Bordure arrondie, Ombre légère */
+.service-card {
+    width: 350px; /* Contrainte : Largeur 350 px */
+    background-color: #ffffff;
+    border-radius: 12px; /* Contrainte : Bordure arrondie */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Contrainte : Ombre légère */
+    overflow: hidden; /* Empêche l'image de dépasser des bords arrondis */
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease;
+}
+
+/* Style de l'image illustrative */
+.service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Espacement interne du contenu */
+.service-content {
+    padding: 20px;
+    text-align: left;
+}
+
+/* Style du titre */
+.service-title {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Style de la description */
+.service-description {
+    font-size: 15px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+/* Style du prix */
+.service-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Contrainte CSS : Bouton vert */
+.btn-subscribe {
+    width: 100%;
+    background-color: #28a745; /* Vert standard */
+    color: #ffffff; /* Texte blanc */
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition fluide pour le hover */
+}
+
+/* Contrainte CSS : Effet de survol (hover) sur le bouton */
+.btn-subscribe:hover {
+    background-color: #218838; /* Vert plus foncé au survol */
+}
